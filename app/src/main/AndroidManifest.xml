@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemes">
         <activity android:name=".CikActivity"></activity>
-        <activity android:name=".EggActivity" />
+        <activity android:name=".EggActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
