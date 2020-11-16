@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My EggApplication</string>
+    <string name="egg_play">알 부화시키기</string>
+    <string name="cik_play">닭 동전벌기</string>
 </resources>

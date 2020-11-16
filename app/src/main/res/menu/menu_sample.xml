@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_bar_coin"
-        android:icon="@drawable/baseline_attach_money_white_18dp"
+        android:icon="@drawable/money_white_18dp"
         android:title="동전"
         app:showAsAction="always" />
 
@@ -20,7 +20,7 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/action_bar_cik"
-        android:icon="@drawable/chickcol"
+        android:icon="@drawable/egg_piyac_color"
         android:title="cikken!"
         app:showAsAction="always" />
 

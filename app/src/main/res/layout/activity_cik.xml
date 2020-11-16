@@ -6,4 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".CikActivity">
 
+    <Button
+        android:id="@+id/goEggBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cikGame"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:text="go egg"/>
+
+    <RelativeLayout
+        android:id="@+id/cikGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/goEggBtn"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/changeBtn_chi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_black_launcher_foreground"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="touch coin"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/chicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/chicken0"
+                />
+
+            <ImageView
+                android:id="@+id/imagCoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/money_black_18dp"
+                android:background="@color/yellow"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

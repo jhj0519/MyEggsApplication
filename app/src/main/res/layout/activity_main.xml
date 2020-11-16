@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_marginBottom="20dp"
     tools:context=".MainActivity">
-
-    <RelativeLayout
-        android:id="@+id/mainButtonLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black"
-        android:layout_marginBottom="5pt"
-         >
 
         <TextView
             android:id="@+id/eggGameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="egg game!"
+            android:text="egg"
             android:layout_centerHorizontal="true"
             android:textSize="@android:dimen/app_icon_size"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:background="@color/black"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
@@ -34,51 +27,49 @@
             android:orientation="vertical"
             android:layout_alignParentBottom="true"
             android:layout_below="@id/eggGameText"
-            android:background="#fffacd"
-            android:layout_marginTop="5pt"
+            android:background="@drawable/background_main_bottun"
+            android:layout_margin="20dp"
             >
 
             <Button
                 android:id="@+id/goEgg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="자식농사"
-                android:layout_margin="20dp"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:layout_width="240dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:text="병아리 부하 시키기"
+                android:layout_margin="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/background_main_bottun"
                 />
 
             <Button
                 android:id="@+id/goCik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="노동"
-                android:layout_margin="20dp"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:background="#2b2911"
+                android:layout_width="240dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:text="동전 모으기"
+                android:textSize="20sp"
+                android:background="@drawable/background_main_bottun"
                 />
             <Button
                 android:id="@+id/exit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="240dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
                 android:text="exit"
                 android:onClick="exit"
-                android:layout_margin="20dp"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:background="#504e17"/>
+                android:layout_margin="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/background_main_bottun"/>
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_marginTop="@android:dimen/app_icon_size"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/hatching_egg"
-
+                android:layout_width="260dp"
+                android:layout_height="126dp"
+                android:background="@drawable/hatching_egg"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
                 />
-
         </LinearLayout>
-    </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
